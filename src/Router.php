@@ -1,6 +1,6 @@
 <?php
 
-namespace Leedch\Website\Core;
+namespace Leedch\Router;
 
 use Leedch\Convert\Convert as C;
 use Leedch\View\View;
