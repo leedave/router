@@ -1,0 +1,44 @@
+{
+    "name": "leedch/router",
+    "type": "library",
+    "description": "Routes HTTP Requests to PHP methods, alternate to MVC Controllers",
+    "keywords": [
+        "leedch",
+        "router",
+        "controller"
+    ],
+    "homepage": "https://github.com/leedave/router.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Lee",
+            "email": "leed@leed.ch",
+            "homepage": "https://www.leed.ch/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~7.0|~7.1",
+        "leedch/convert": "^1.0",
+        "leedch/view": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leedch\\Router\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Leedch\\Router\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
