@@ -47,9 +47,7 @@ class Router
     {
         $view = new View();
         http_response_code(404);
-        $response = $view->header("Not Found") 
-                    .View::loadView(leedch_templateError404)
-                    .$view->footer();//file_get_contents(leedch_templateError404);
+        $response = View::loadView(leedch_templateError404);
         return $response;
     }
 
