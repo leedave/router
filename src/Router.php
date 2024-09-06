@@ -58,7 +58,7 @@ class Router
     protected function getRequestData()
     {
         $this->requestMethod = $_SERVER['REQUEST_METHOD'];
-        $arrFullUri = explode("?", $_SERVER['REQUEST_URI']);
+        $arrFullUri = explode("?", (string) $_SERVER['REQUEST_URI']);
         $this->requestPath = $arrFullUri[0];
 
         if (isset($arrFullUri[1])) {
